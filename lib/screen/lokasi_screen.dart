@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:ksehat/widget/build_restoran_card.dart'; // pastikan ini diimport
 
 class LokasiScreen extends StatefulWidget {
@@ -138,17 +137,6 @@ class _LokasiScreenState extends State<LokasiScreen> {
               )
               .toList();
     });
-  }
-
-  void _openMaps(String url) async {
-    final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Tidak bisa membuka Google Maps')),
-      );
-    }
   }
 
   @override
