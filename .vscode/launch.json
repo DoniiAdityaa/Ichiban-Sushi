@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Ksehat iPhone",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "0F542023-D99E-48FC-96F4-B76662EE46B1"
+        },
+        {
+            "name": "Ksehat Samsung",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "RRCWB06JL8P"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": [
+                "Ksehat iPhone",
+                "Ksehat Samsung"
+            ]
+        }
+    ]
+}
