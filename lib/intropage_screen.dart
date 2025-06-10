@@ -16,7 +16,7 @@ class IntroContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF1C1F2A),
+      color: const Color(0xFFffffff),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -28,7 +28,7 @@ class IntroContent extends StatelessWidget {
           Text(
             title,
             style: const TextStyle(
-              color: Colors.white,
+              color: const Color(0xFF1C1F2A),
               fontWeight: FontWeight.w800,
               fontSize: 25,
             ),
@@ -41,7 +41,7 @@ class IntroContent extends StatelessWidget {
               child: Text(
                 description,
                 style: const TextStyle(
-                  color: Color(0xFFD9D9D9),
+                  color: Colors.black87,
                   fontSize: 15,
                   fontWeight: FontWeight.w400,
                 ),

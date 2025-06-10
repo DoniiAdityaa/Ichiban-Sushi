@@ -18,7 +18,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1C1F2A),
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           // Page view
@@ -47,8 +47,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     controller: _controller,
                     count: 2,
                     effect: ScrollingDotsEffect(
-                      activeDotColor: Colors.grey[100]!,
-                      dotColor: const Color(0xFF2E2E2E),
+                      activeDotColor: const Color(0xff2e2e2e),
+                      dotColor: Colors.grey[400]!,
                       dotHeight: 10,
                       dotWidth: 10,
                     ),

@@ -7,19 +7,19 @@ class Promosi3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff1C1F2A),
+        backgroundColor: Color(0xFFF2F2F7),
         title: const Text(
           "Promosi 3",
-          style: TextStyle(fontSize: 18, color: Colors.white),
+          style: TextStyle(fontSize: 18, color: Colors.black),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.pop(context),
         ),
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color(0xff1C1F2A),
+          color: Color(0xFFF2F2F7),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -41,7 +41,7 @@ class Promosi3 extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -59,7 +59,7 @@ class Promosi3 extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 13,
                     height: 1.7,
-                    color: Color(0xFFD9D9D9),
+                    color: Colors.black87,
                     fontWeight: FontWeight.w400,
                   ),
                   textAlign: TextAlign.left,

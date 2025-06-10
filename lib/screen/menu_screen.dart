@@ -28,18 +28,17 @@ class _MenuScreenState extends State<MenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1C1F2A),
+      backgroundColor: const Color(0xFFF2F2F7),
       body: SafeArea(
         child: Column(
           children: [
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 12),
-              color: const Color(0xFFFFC107),
               child: Center(
                 child: Image.asset(
                   'assets/image.png',
-                  height: 50,
+                  height: 35,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -82,7 +81,7 @@ class _MenuScreenState extends State<MenuScreen> {
                             Text(
                               category['category']!,
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
                               ),

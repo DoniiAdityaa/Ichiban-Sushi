@@ -142,16 +142,16 @@ class _LokasiScreenState extends State<LokasiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1c1f2a),
+      backgroundColor: const Color(0xFFF2F2F7),
       appBar: AppBar(
         title: const Text('Lihat Lokasi'),
-        backgroundColor: const Color(0xFF1c1f2a),
-        foregroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF2F2F7),
+        foregroundColor: Colors.black,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
         ),
       ),
       body: Padding(
@@ -161,13 +161,13 @@ class _LokasiScreenState extends State<LokasiScreen> {
             TextField(
               controller: _searchController,
               onChanged: _search,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.black),
               decoration: InputDecoration(
                 hintText: 'Cari kota anda...',
-                hintStyle: const TextStyle(color: Colors.white70),
+                hintStyle: const TextStyle(color: Colors.black54),
                 filled: true,
-                fillColor: const Color(0xFF2C2F3B),
-                prefixIcon: const Icon(Icons.search, color: Colors.white),
+                fillColor: const Color(0xFFE5E5EA),
+                prefixIcon: const Icon(Icons.search, color: Colors.black),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,

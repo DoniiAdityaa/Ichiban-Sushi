@@ -11,13 +11,13 @@ class MenuDetailScreen extends StatelessWidget {
     final menuItems = _getMenuItems(category);
 
     return Scaffold(
-      backgroundColor: const Color(0xff1C1F2A),
+      backgroundColor: const Color(0xFFF2F2F7),
       appBar: AppBar(
-        backgroundColor: const Color(0xff1C1F2A),
-        title: Text(category, style: const TextStyle(color: Colors.white)),
+        backgroundColor: const Color(0xFFF2F2F7),
+        title: Text(category, style: const TextStyle(color: Colors.black)),
         leading: IconButton(
           onPressed: () => Navigator.pop(context),
-          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
         ),
         centerTitle: true,
       ),
@@ -48,7 +48,7 @@ class MenuDetailScreen extends StatelessWidget {
                 return GestureDetector(
                   onTap: () => _showMenuDetailBottomSheet(context, item),
                   child: Card(
-                    color: const Color(0xFF2D3246),
+                    color: Colors.white,
                     margin: const EdgeInsets.only(bottom: 10),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -77,7 +77,7 @@ class MenuDetailScreen extends StatelessWidget {
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
-                                    color: Colors.white,
+                                    color: Color(0xFF3E2723),
                                   ),
                                 ),
                                 const SizedBox(height: 4),
@@ -87,7 +87,7 @@ class MenuDetailScreen extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
                                     fontSize: 13,
-                                    color: Colors.white54,
+                                    color: Colors.black87,
                                   ),
                                 ),
                               ],
@@ -96,7 +96,7 @@ class MenuDetailScreen extends StatelessWidget {
                           IconButton(
                             icon: Icon(
                               isFav ? Icons.favorite : Icons.favorite_border,
-                              color: isFav ? Colors.red : Colors.white54,
+                              color: isFav ? Colors.red : Color(0xFFE74C3C),
                             ),
                             onPressed: () {
                               favoriteProvider.toggleFavorite(item);
@@ -148,6 +148,13 @@ class MenuDetailScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 8,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
                         ),
                       ),
                     ),

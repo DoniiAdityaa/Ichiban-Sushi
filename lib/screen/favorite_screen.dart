@@ -10,10 +10,10 @@ class FavoriteScreen extends StatelessWidget {
     final favorites = context.watch<FavoriteProvider>().favorites;
 
     return Scaffold(
-      backgroundColor: const Color(0xff1C1F2A),
+      backgroundColor: const Color(0xFFF2F2F7),
       appBar: AppBar(
-        backgroundColor: const Color(0xff1C1F2A),
-        title: const Text("Favorite", style: TextStyle(color: Colors.white)),
+        backgroundColor: const Color(0xFFF2F2F7),
+        title: const Text("Favorite", style: TextStyle(color: Colors.black)),
         centerTitle: true,
       ),
       body:
@@ -21,7 +21,7 @@ class FavoriteScreen extends StatelessWidget {
               ? const Center(
                 child: Text(
                   "Belum ada menu favorit.",
-                  style: TextStyle(color: Colors.white70),
+                  style: TextStyle(color: Colors.black87),
                 ),
               )
               : ListView.builder(
@@ -33,7 +33,7 @@ class FavoriteScreen extends StatelessWidget {
                   return GestureDetector(
                     onTap: () => _showMenuDetailBottomSheet(context, item),
                     child: Card(
-                      color: const Color(0xFF2D3246),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(bottom: 10),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
@@ -62,7 +62,7 @@ class FavoriteScreen extends StatelessWidget {
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
-                                      color: Colors.white,
+                                      color: Color(0xFF3E2723),
                                     ),
                                   ),
                                   const SizedBox(height: 4),
@@ -72,7 +72,7 @@ class FavoriteScreen extends StatelessWidget {
                                     overflow: TextOverflow.ellipsis,
                                     style: const TextStyle(
                                       fontSize: 13,
-                                      color: Colors.white54,
+                                      color: Colors.black87,
                                     ),
                                   ),
                                 ],

@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: const Color(
-        0xFF1c1f2a,
+        0xFFF2F2F7,
       ), // Sesuaikan jika pakai tema gelap
       body: SafeArea(
         child: Column(
@@ -28,11 +28,11 @@ class HomeScreen extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 12),
-              color: const Color(0xFFFFC107),
+              color: const Color(0xFFF2F2F7),
               child: Center(
                 child: Image.asset(
                   'assets/image.png',
-                  height: 50,
+                  height: 35,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                         const Text(
                           'Menu Terbaik',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),
@@ -119,7 +119,7 @@ class HomeScreen extends StatelessWidget {
                           child: const Text(
                             'Lihat Menu',
                             style: TextStyle(
-                              color: Color(0xFFFFC107),
+                              color: Color(0xFFFFA000),
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
                             ),
@@ -166,7 +166,7 @@ class HomeScreen extends StatelessWidget {
                         const Text(
                           'Lokasi Ichiban Sushi',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),
@@ -183,7 +183,7 @@ class HomeScreen extends StatelessWidget {
                           child: const Text(
                             'Lihat Lokasi',
                             style: TextStyle(
-                              color: Color(0xFFFFC107),
+                              color: Color(0xFFFFA000),
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
                             ),
@@ -249,7 +249,7 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(height: 6),
           Text(
             title,
-            style: const TextStyle(color: Colors.white, fontSize: 13),
+            style: const TextStyle(color: Colors.black, fontSize: 13),
           ),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ksehat/controller/navbar_controller.dart'; // ⬅️ Tambahkan ini
+import 'package:ksehat/screen/about_screen.dart';
 import 'package:ksehat/screen/favorite_screen.dart';
 import 'package:ksehat/screen/home_screen.dart';
 import 'package:ksehat/screen/menu_screen.dart';
@@ -12,6 +13,7 @@ class Navbar extends StatelessWidget {
     HomeScreen(),
     FavoriteScreen(),
     MenuScreen(),
+    AboutScreen(),
   ];
 
   @override
@@ -20,18 +22,18 @@ class Navbar extends StatelessWidget {
       valueListenable: navbarIndex, // Gunakan controller
       builder: (context, selectedIndex, _) {
         return Scaffold(
-          backgroundColor: const Color(0xff1C1F2A),
+          backgroundColor: Colors.white,
           body: _screens[selectedIndex],
           bottomNavigationBar: Container(
-            color: const Color(0xff1C1F2A),
+            color: Colors.white,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: GNav(
                 //Gnav buat Navbar
-                backgroundColor: const Color(0xff1C1F2A),
-                color: Colors.white,
-                activeColor: Colors.white,
-                tabBackgroundColor: Color(0xFF2D3246),
+                backgroundColor: Colors.white,
+                color: Colors.black,
+                activeColor: Colors.black,
+                tabBackgroundColor: Color(0xFFF2F2F7),
                 gap: 15,
                 selectedIndex: selectedIndex,
                 onTabChange: (index) {
@@ -42,6 +44,7 @@ class Navbar extends StatelessWidget {
                   GButton(icon: Icons.home_outlined, text: 'Home'),
                   GButton(icon: Icons.favorite_border, text: 'Favorite'),
                   GButton(icon: Icons.menu_book_rounded, text: 'Menu'),
+                  GButton(icon: Icons.info, text: 'Tentang'),
                 ],
               ),
             ),
